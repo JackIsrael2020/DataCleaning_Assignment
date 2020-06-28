@@ -9,9 +9,9 @@ library(dplyr)
 ##############
 
 # First we download the data.
-url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-download(url, dest="dataset.zip", mode="wb")
-unzip("dataset.zip")
+#url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+#download(url, dest="dataset.zip", mode="wb")
+#unzip("dataset.zip")
 
 # We load in 
 yTest <- read.delim("UCI HAR Dataset//test//y_test.txt", sep=" ", header = FALSE)
