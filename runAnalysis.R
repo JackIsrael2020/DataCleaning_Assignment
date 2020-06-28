@@ -1,3 +1,5 @@
+runAnalysis <- function(){
+
 # Here are the packages you'll need for this script
 ##############
 install.packages("downloader")
@@ -147,3 +149,5 @@ Data4$`Activity Type` <- factor(Data4$'Activity Type', levels = c(1:6), labels =
 # for each activity and each subject
 final_Dataset <- aggregate(Data4[,3:81], by = list('Subject Number' = Data4$`Subject Number`, 
                                     `Activity Type` = Data4$`Activity Type`), mean)
+print(final_Dataset)
+}
